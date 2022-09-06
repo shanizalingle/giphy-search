@@ -1,0 +1,12 @@
+body {
+  padding: 80px;
+  background-color: rgb(196, 251, 241);
+}
+
+h1 {
+  font-size: 60px;
+}
+
+.container {
+  text-align: center;
+}
