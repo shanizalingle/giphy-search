@@ -1,9 +1,11 @@
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import { getGiphy } from "./gph-srch.js";
+import { getSearchGiphy } from "./gph-srch.js";
+import { getRandomGiphy } from './gph-srch.js';
+import { getTrendingGiphy } from './gph-srch.js';
 
-export function printElements(apiResponse, query){
+export function printSearch(apiResponse, query){
 	const giphyResult = document.getElementById("giphy-result");
 	document.getElementById("giphy-result").innerHTML = null;
 	const queryDisplay = document.createElement("h2");
