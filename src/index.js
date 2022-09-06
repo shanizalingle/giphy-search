@@ -20,6 +20,27 @@ export function printSearch(apiResponse, query){
 	}
 }
 
+export function printTrending(apiResponse) {
+  const giphyTrendingResult = document.getElementById("giphy-trending-result");
+
+	for (let i=0; i < apiResponse.data.length; i++){
+		let gifResult = apiResponse.data[i].images.fixed_height.url;
+    let newImg = document.createElement("img");
+    newImg.setAttribute("src", gifResult);
+    giphyTrendingResult.append(newImg);
+	}
+}
+
+export function printRandom(apiResponse) {
+	const giphyRandomResult = document.getElementById("giphy-random-result");
+	document.getElementById("giphy-random-result").innerHTML = null;
+
+	let gifResult = apiResponse.data.images.fixed_height.url;
+	let newImg = document.createElement("img");
+	newImg.setAttribute("src", gifResult);
+	giphyRandomResult.append(newImg);
+}
+
 export function printError(request, apiResponse, query){
 	const giphyResult = document.getElementById("giphy-result");
 	document.getElementById("giphy-result").innerHTML = null;
@@ -28,13 +49,20 @@ export function printError(request, apiResponse, query){
 	giphyResult.append(queryDisplay);
 }
 
-function formSubmit(event){
+function randomFormSubmit(event) {
+  event.preventDefault();
+  getRandomGiphy();
+}
+
+function searchFormSubmit(event){
 	event.preventDefault();
 	const query = document.getElementById("gif-search").value;
 	document.querySelector("#gif-search").value = null;
-	getGiphy(query); 
+	getSearchGiphy(query); 
 }
 
 window.addEventListener("load", function(){
-	document.querySelector('form').addEventListener("submit", formSubmit);
+	document.querySelector('form#search-form').addEventListener("submit", searchFormSubmit);
+	document.querySelector('form#random-form').addEventListener("submit", randomFormSubmit);
+  getTrendingGiphy();
 })

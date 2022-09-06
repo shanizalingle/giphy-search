@@ -6,14 +6,24 @@
   <body>
     <div class="container">
       <h1>Giphy Search</h1>
-      <form id="gif-form">
+
+      <div class="random-box" id="giphy-random-result">
+        <form id="random-form">
+          <button type="submit" class="btn btn-dark" id="random-btn">Random</button>
+        </form>
+      </div>
+
+      <form id="search-form">
         <label for="gif-search">Enter a search word:</label>
         <input id="gif-search" type="text" name="gif-search">
         <button type="submit" class="btn btn-light" id="submit-btn">Search</button>
       </form>
     </div>
+
 		<div class="result-box" id="giphy-result">
 		</div>
+
+    <div class="trending-box" id="giphy-trending-result"></div>
   </body>
 </html>
 
