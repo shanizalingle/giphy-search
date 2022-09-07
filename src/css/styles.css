@@ -42,7 +42,7 @@ p {
 #random_container {
   background: #f6f6f6;
   padding: 30px;
-  width: 800px;
+  width: 100%;
 }
 
 #giphy-result {
