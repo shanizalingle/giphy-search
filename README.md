@@ -22,8 +22,9 @@ _This application uses a WEB API to generate gifs. Trending gifs are displayed, 
 ## Setup/Installation Requirements
 
 * _Clone this repository into your desktop_
-* _Navigate to the giphy-search_
-* _Open index.html_
+* _Open the giphy-search directory_
+* _run "npm install"_
+* _run "npm run start"_
 
 ## Known Bugs
 
