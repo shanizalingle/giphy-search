@@ -66,4 +66,4 @@ window.addEventListener("load", function(){
 	document.querySelector('form#random-form').addEventListener("submit", randomFormSubmit);
   getTrendingGiphy();
 
-})
+});
