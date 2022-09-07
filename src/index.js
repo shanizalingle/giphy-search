@@ -65,4 +65,5 @@ window.addEventListener("load", function(){
 	document.querySelector('form#search-form').addEventListener("submit", searchFormSubmit);
 	document.querySelector('form#random-form').addEventListener("submit", randomFormSubmit);
   getTrendingGiphy();
+
 })

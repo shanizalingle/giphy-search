@@ -4,26 +4,33 @@
     <title>Giphy Search</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Giphy Search</h1>
-
-      <div class="random-box" id="giphy-random-result">
-        <form id="random-form">
-          <button type="submit" class="btn btn-dark" id="random-btn">Random</button>
-        </form>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <p id="navbar__logo">GIPHY SEARCH</p>
       </div>
-
+    </nav>
+    <div id="trending_container">
+      <h4>Trending Gifs</h4>
+      <div class="trending-box" id="giphy-trending-result">
+      </div>
+    </div>
+    <div id="random_container">
+      <h3>Choose A Random Gif</h3>
+      <form id="random-form">
+        <button type="submit" id="random-btn">Random</button><br><br>
+      </form>
+      <div class="random-box" id="giphy-random-result"></div>
+    </div>
+    <div id="search_container">
       <form id="search-form">
-        <label for="gif-search">Enter a search word:</label>
-        <input id="gif-search" type="text" name="gif-search">
-        <button type="submit" class="btn btn-light" id="submit-btn">Search</button>
+        <h2>Search For Gif</h2>
+        <label for="gif-search"><p>Enter A Key Word:</p></label>
+        <input id="gif-search" type="text" name="gif-search"><br>
+        <button type="submit" id="submit-btn">Search</button>
       </form>
     </div>
-
-		<div class="result-box" id="giphy-result">
-		</div>
-
-    <div class="trending-box" id="giphy-trending-result"></div>
+      <div class="result-box" id="giphy-result">
+      </div>
   </body>
 </html>
 

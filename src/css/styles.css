@@ -1,12 +1,137 @@
-body {
-  padding: 80px;
-  background-color: rgb(196, 251, 241);
-}
-
+/*Text Section*/
 h1 {
   font-size: 60px;
 }
 
-.container {
-  text-align: center;
+h2 {
+  font-size: 40px;
+  text-align: left;
+  font-weight: bold;
 }
+
+h3 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+
+p {
+  font-size: 30px;
+}
+
+/*Container Section*/
+#search_container {
+  padding: 30px;
+}
+
+#trending_container {
+  display: flex-box;
+	background: #000000;
+  background: linear-gradient(to left, #262626, #000000);
+  padding: 30px;
+	width: 450px;
+  height: 100%;
+	float: right;
+}
+
+#random_container {
+  background: #f6f6f6;
+  padding: 30px;
+  width: 800px;
+}
+
+#giphy-result {
+  padding: 30px;
+}
+
+#gif-search {
+  border-radius: 4px;
+  border-color:rgb(211, 211, 211);
+  height: 35px;
+  border-style:dashed;
+}
+/* 
+#submit-btn {
+  font-size: 20px;
+  padding: 3px 20px;
+  background: #f5f5f5;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+} */
+
+#submit-btn {
+  font-size: 20px;
+  padding: 5px 25px;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+  background: linear-gradient(to right, #38ef7d, #11998e); 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+#random-btn {
+  font-size: 20px;
+  padding: 5px 25px;
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+  background: linear-gradient(to right, #38ef7d, #11998e); 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+/*Navbar section*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background: #000000;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#navbar__logo {
+  background: #11998e;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #38ef7d, #11998e);  
+  background: linear-gradient(to right, #38ef7d, #11998e); 
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2.5rem;
+}
+
