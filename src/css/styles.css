@@ -1,3 +1,9 @@
+/* body {
+  position: relative;
+  height: auto;
+  min-height: 100%;
+} */
+
 /*Text Section*/
 h1 {
   font-size: 60px;
@@ -31,15 +37,17 @@ p {
 
 #trending_container {
   display: flex-box;
+  flex-direction: column;
 	background: #000000;
   background: linear-gradient(to left, #262626, #000000);
   padding: 30px;
 	width: 450px;
-  height: 100%;
+  height: 200%;
 	float: right;
 }
 
 #random_container {
+  display: flex-box;
   background: #f6f6f6;
   padding: 30px;
   width: 100%;
@@ -47,24 +55,16 @@ p {
 
 #giphy-result {
   padding: 30px;
+  margin-right: 450px;
 }
 
 #gif-search {
+  display: flex-box;
   border-radius: 4px;
   border-color:rgb(211, 211, 211);
   height: 35px;
   border-style:dashed;
 }
-/* 
-#submit-btn {
-  font-size: 20px;
-  padding: 3px 20px;
-  background: #f5f5f5;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  outline: none;
-} */
 
 #submit-btn {
   font-size: 20px;
